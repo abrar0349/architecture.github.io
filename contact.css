@@ -1,0 +1,223 @@
+:root{
+    --TextColorGray :rgb(175, 169, 169);
+    --TextColorYellow :#FFBB31;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.con-slider{
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.25)),url('https://deothemes.com/envato/sedona/html/img/page-title/contact.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 85vw;
+    margin: auto;
+    padding:var(--LeftRightPadding);
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-section-1{
+    padding: 100px 7%;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.contact-section-1 .section-1-1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-around;
+}
+.contact-section-1 .section-1-1 h3{
+    color: black;
+    font-size: 1.5rem;
+}
+.contact-section-1 .section-1-1 p{
+    color: rgb(175, 169, 169);
+    width: 50%
+}
+.contact-section-1 .section-1-1 .pHover:hover{
+    color: #FFBB31;
+    cursor: pointer;
+}
+.contact-section-1 .section-1-1 .Social{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+.contact-section-1 .section-1-1 .Social .Social-logo{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+.contact-section-1 .section-1-1 .Social .Social-logo a{
+    color: black;
+    transition: all 0.2s;
+}
+.contact-section-1 .section-1-1 .Social .Social-logo a:hover{
+    color: #FFBB31;  
+}
+
+
+.contact-section-1 .section-1-2{
+    flex: 2;
+    color: var(--TextColorGray);
+    font-size: 1.5rem;
+}
+.contact-section-1 .section-1-2 h2{
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 4%;
+}
+.contact-section-1 .section-1-2 .form{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+.contact-section-1 .section-1-2 .form input::placeholder{
+    color: black;
+}
+.contact-section-1 .section-1-2 .form input:focus{
+    border-bottom: 1px solid var(--TextColorYellow);
+}
+.contact-section-1 .section-1-2 .form .Inputs input:focus{
+    border-bottom: 1px solid var(--TextColorYellow);
+}
+.contact-section-1 .section-1-2 .form input:focus::placeholder {
+    color: var(--TextColorYellow);
+    /* padding-top: -10rem;  it's not working on psedu classes*/ 
+}
+.contact-section-1 .section-1-2 .form .Inputs{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.contact-section-1 .section-1-2 .form .Inputs input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--TextColorGray);
+    flex: 1; 
+    
+}
+.contact-section-1 .section-1-2 .form .Inp3{
+    flex-grow: 2;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--TextColorGray);
+}
+
+.contact-section-1 .section-1-2 .form .Inp4{
+    flex-grow: 3;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--TextColorGray);
+}
+.contact-section-1 .section-1-2 .form .btn{
+    background-color: var(--TextColorYellow);
+    border: none;
+    width: 24%;
+    height: 60px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+.contact-section-1 .section-1-2 .form .btn:hover{
+    background-color:rgba(255, 187, 49,0.9);
+}
+
+.Contact-Map{
+    /* margin-top: 3%;
+    margin-bottom: 2%; */
+    /* margin-block: 3%; */
+    margin: 3% 9%;
+    /* margin: auto; */
+    /* position: relative;
+    left: 50%; */
+    width: 80%;
+    height: 50vh;
+    /* border: 2px solid gray; */
+}
+.Contact-Map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (min-width:600px) and (max-width: 900px){
+
+    .contact-section-1{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .contact-section-1 .section-1-1 h3{
+        font-size: 2rem;
+    }
+    .contact-section-1 .section-1-1 .Social .Social-logo{
+        width: 30%;
+    }
+
+    /* contect part 1 of section 1 */
+    .contact-section-1 .section-1-2 {
+        text-align: center;
+    }
+   
+    .Contact-Map{
+        margin: 3% 6%;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .con-slider{
+        font-size: 1.5rem;
+    }
+
+    /* contect section  part 1 of secttion 1 */
+    .contact-section-1{
+        flex-direction: column;
+        gap: 80px;
+    }
+    .contact-section-1 .section-1-1 h3{
+        font-size: 1.5rem;
+    }
+    .contact-section-1 .section-1-1 .Social .Social-logo{
+        width: 50%;
+    }
+
+     /* contect section  part 2 of secttion 1 */
+    .contact-section-1 .section-1-2{
+        flex: 1;
+    }
+    .contact-section-1 .section-1-2 h2{
+        font-size: 2rem;
+    }
+    .contact-section-1 .section-1-2 {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .contact-section-1 .section-1-2 .form .Inputs{
+        flex-direction: column;
+        gap: 70px;
+    }
+      .contact-section-1 .section-1-2 .form .btn{
+        width: 35%;
+        margin: auto;
+    }
+
+    .Contact-Map{
+        margin: 3% 1%;
+        width: 98%;
+    }
+}

@@ -1,0 +1,367 @@
+:root{
+    --TextColorGray :rgb(175, 169, 169);
+    --TextColorYellow :#FFBB31;
+}
+.About-slider{
+    background: linear-gradient(rgba(209, 110, 110, 0.9),rgba(231, 122, 122, 0.50)),url('https://deothemes.com/envato/sedona/html/img/page-title/about.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+}
+
+.About-slider p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* slider of about end in there */
+
+.About-section-1{
+    padding-top: 2.5%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.About-section-1 .section-1-1{
+    width: 65%;
+    margin: auto;
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.About-section-1 .section-1-1 p{
+    color: var(--TextColorGray);
+    font-size: 1.2rem;
+}
+.About-section-1 .section-1-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.About-section-1 .section-1-2 .Card{
+    display: block;
+    min-width: 25%;
+    position: relative;
+    min-height: 35vh;
+    transition: all 0.5s;
+    overflow: hidden;
+    /* border: 2px solid; */
+    cursor: pointer;
+}
+
+.About-section-1 .section-1-2 .Card .Bgimage{
+   width: 100%;
+   height: 100%;
+   position: relative;
+   background-image: url('https://deothemes.com/envato/sedona/html/img/services/v-2/1.jpg');
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.About-section-1 .section-1-2 .Card:hover .Bgimage{
+    scale: 1.1;
+}
+.About-section-1 .section-1-2 .Card .image2{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/services/v-2/2.jpg');
+}
+.About-section-1 .section-1-2 .Card .image3{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/services/v-2/3.jpg');
+}
+.About-section-1 .section-1-2 .Card .Bgtext{
+    font-size: 1.2rem;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    bottom: 20%;
+    right: -15%;
+    padding-left: 2%;
+    background-color: white;
+}
+.About-section-1 .section-1-2 .Card .Bgtext h3{
+    font-size: 100%;
+    font-weight: 800;
+}
+.About-section-1 .section-1-2 .Card .Bgtext p{
+    color: var(--TextColorGray);
+    font-size: 78%;
+    width: 100%;
+    line-height: 1.5rem;
+}
+.About-section-1 .section-1-2 .Card .Bgtext p span{
+    color: var(--TextColorYellow);
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+/* about section 1 end in there  */
+
+.About-section-2{
+    padding-top: 10%;
+}
+.About-section-2 .section-2-1{
+    border: none;
+    border-top: 5px solid var(--TextColorGray);
+    border-bottom: 5px solid var(--TextColorGray);
+    width: 90%;
+    height: 40vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.About-section-2 .section-2-1 .count{
+    font-size: 2.5rem;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.About-section-2 .section-2-1 .count p{
+    font-size: 1rem;
+}
+.About-section-2 .section-2-2{
+    margin-top: 12%;
+    margin-bottom: 15%;
+    width: 98vw;
+    display: flex;
+    gap: 7%;
+    padding-inline: 3%;
+}
+.About-section-2 .section-2-2 .Blogs{
+    width: 22%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+.About-section-2 .section-2-2 .Blogs h2{
+    color: var(--TextColorYellow);
+    font-size: 1rem;
+}
+.About-section-2 .section-2-2 .Blogs h3{
+    font-size: 2.5rem;
+}
+.About-section-2 .section-2-2 .Blogs p{
+    color: var(--TextColorGray);
+}
+.About-section-2 .section-2-2 .section-2-2-1{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.About-section-2 .section-2-2 .section-2-2-1 .Cards{
+    width: 25%;
+}
+.About-section-2 .section-2-2 .section-2-2-1 .Cards .Bgpic{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/team/1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100% ;
+    height: 60vh;
+}
+.About-section-2 .section-2-2 .section-2-2-1 .Cards .Bgpic2{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/team/2.jpg');
+}
+.About-section-2 .section-2-2 .section-2-2-1 .Cards .Bgpic3{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/team/3.jpg');
+}
+
+/* In section 2 have part 3 start from there  */
+.About-section-2 .section-2-3{
+    background-color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media (min-width:600px) and (max-width: 900px){
+    .About-slider{
+        font-size: 1.8rem;
+        padding-top: 2.5%;
+    }
+    .About-slider p{
+        font-size: 1rem;
+    }
+    /* about slider end there  */
+
+    .About-section-1{
+        margin-top: 50px;
+        gap: 50px;
+    }
+    
+    .About-section-1 .section-1-1{
+        font-size: 1.9rem;
+        text-align: center;
+        gap: 40px;
+    }
+    .About-section-1 .section-1-1 p{
+        font-size: 1rem;
+    }
+    .About-section-1 .section-1-2{
+        flex-direction: column;
+        gap: 90px;
+        align-items: center;
+    }
+    .About-section-1 .section-1-2 .Card{
+        width: 60%;
+    }
+    /* about section 1 is end in there  */
+
+    .About-section-2 .section-2-2{
+        margin-top: 12%;
+        margin-bottom: 15%;
+        width: 100%;
+        display: flex;
+        gap: 7%;
+        padding-inline: 0;
+    }
+    .About-section-2{
+        padding-top: 20%;
+    }
+    .About-section-2 .section-2-1 .count{
+        font-size: 2rem;
+    }
+    .About-section-2 .section-2-1 .count p{
+        font-size: 0.8rem;
+    }
+    .About-section-2 .section-2-2{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .About-section-2 .section-2-2 .Blogs{
+        width: 100%;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
+    .About-section-2 .section-2-2 .Blogs h2{
+        font-size: 0.9rem;
+    }
+    .About-section-2 .section-2-2 .Blogs h3{
+        font-size: 2rem;
+    }
+    .About-section-2 .section-2-2 .section-2-2-1{
+        gap: 3px;
+    }
+    .About-section-2 .section-2-2 .section-2-2-1 .Cards{
+        width: 25%;
+        /* border: 2px solid; */
+    }
+    .About-section-2 .section-2-2 .section-2-2-1 .Cards .Bgpic{
+        height: 50vh;
+    }
+    
+}
+
+
+@media only screen and (max-width: 600px){
+    .About-slider{
+        font-size: 1.3rem;
+        padding-top: 15%;
+    }
+    .About-slider p{
+        font-size: 1rem;
+        
+    }
+        /* about slider end there  */
+
+    .About-section-1{
+        margin-top: 50px;
+        width: 100%;
+        gap: 50px;
+    }
+    
+    .About-section-1 .section-1-1{
+        font-size: 1.4rem;
+        text-align: center;
+        gap: 40px;
+    }
+    .About-section-1 .section-1-1 p{
+        font-size: 0.8rem;
+    }
+    .About-section-1 .section-1-2{
+        flex-direction: column;
+        gap: 90px;
+        align-items: center;
+    }
+    .About-section-1 .section-1-2 .Card{
+        width: 100%;
+    }
+    .About-section-1 .section-1-2 .Card .Bgtext{
+        width: 88%;
+    }
+    /* about section 1 is end in there  */
+
+    .About-section-2 {
+        width: 100%;
+        margin-top: 20%;
+    }
+    .About-section-2 .section-2-1{
+        width: 100%;
+    }
+    .About-section-2 .section-2-1 .count{
+        font-size: 1.5rem;
+    }
+    .About-section-2 .section-2-1 .count p{
+        font-size: 0.8rem;
+    }
+    .About-section-2 .section-2-2{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .About-section-2 .section-2-2 .Blogs{
+        width: 100%;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
+    .About-section-2 .section-2-2 .Blogs h2{
+        font-size: 0.7rem;
+    }
+    .About-section-2 .section-2-2 .Blogs h3{
+        font-size: 1.5rem
+    }
+    .About-section-2 .section-2-2 .section-2-2-1{
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .About-section-2 .section-2-2 .section-2-2-1 .Cards{
+        width: 80%;
+    }
+    .About-section-2 .section-2-2 .section-2-2-1 .Cards .Bgpic{
+        height: 50vh;
+    }
+    .About-section-2 .section-2-2 .section-2-2-1 .Cards .Details h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .About-section-2 .section-2-2 .section-2-2-1 .Cards .Details p{
+        font-size: 1rem;
+        text-align: center;
+    }
+ 
+}

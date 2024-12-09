@@ -1,0 +1,175 @@
+:root{
+    --TextColorGray :rgb(175, 169, 169);
+    --TextColorYellow :#FFBB31;
+}
+.service-slider{
+    background: linear-gradient(rgba(209, 110, 110, 0.9),rgba(231, 122, 122, 0.50)),url('https://deothemes.com/envato/sedona/html/img/page-title/about.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+}
+
+.service-slider p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* slider of about end in there */
+
+.service-section-1{
+    padding-top: 4%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.service-section-1 .section-1-1{
+    width: 65%;
+    margin: auto;
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.service-section-1 .section-1-1 p{
+    color: var(--TextColorGray);
+    font-size: 1.2rem;
+}
+
+
+
+.service-section-1 .section-1-2{
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    gap: 6%;
+} 
+.service-section-1 .section-1-2 .parentOfSect1-2{
+    padding-left: 30px;
+    padding-right: 30px;
+    min-width: 100%;
+    border: 2px solid orange;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.service-section-1 .section-1-2 .Card {
+    border: 2px solid yellowgreen;
+    /* margin-top: 13%; */
+    display: inline;
+    width: 28%; 
+    margin-bottom: 23%;
+    min-width: 25%;
+    position: relative;
+    /* top: 300px; */
+    height: 35vh;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.service-section-1 .section-1-2 .Card:hover .Bgimage{
+    scale: 1.2;
+}
+.service-section-1 .section-1-2 .Card .imageForZoom{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.service-section-1 .section-1-2 .Card .Bgimage{
+   width: 100%;
+   height: 100%;
+   position: relative;
+   background-image: url('https://deothemes.com/envato/sedona/html/img/services/v-2/1.jpg');   /* */
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.service-section-1 .section-1-2 .Card .image2{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/services/v-2/2.jpg');
+}
+.service-section-1 .section-1-2 .Card .image3{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/services/v-2/3.jpg');
+}
+.service-section-1 .section-1-2 .Card .image4{
+    border: 2px solid gray;
+    background-image: url('https://deothemes.com/envato/sedona/html/img/services/v-2/4.jpg');
+}
+.service-section-1 .section-1-2 .Card .image5{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/services/v-2/5.jpg');
+}
+.service-section-1 .section-1-2 .Card .image6{
+    background-image: url('https://deothemes.com/envato/sedona/html/img/services/v-2/6.jpg');
+}
+.service-section-1 .section-1-2 .Card .Bgtext{
+    font-size: 1.2rem;
+    /* border: 2px solid blue; */
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    bottom: 29%;
+    right: -15%;
+    padding: 5% 3%;
+    background-color: white;
+}
+
+.service-section-1 .section-1-2 .Card .Bgtext p{
+    /* border: 2px solid; */
+    color: var(--TextColorGray);
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    width: 100%;
+    /* margin-top: 10px; */
+    padding: 15px 0;
+    /* line-height: 2rem; */
+}
+.service-section-1 .section-1-2 .Card .Bgtext p span{
+    color: var(--TextColorYellow);
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+@media (min-width:600px) and (min-width:900px){
+    /* .service-section-1 .section-1-2{
+        border: 2px solid rebeccapurple;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10%;
+        gap: 6%;
+    }  */
+    .service-section-1 .section-1-2 .parentOfSect1-2{
+        /* padding-left: 30px;
+        padding-right: 30px;
+        min-width: 100%;
+        border: 2px solid orange;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap; */
+        flex-direction: column;
+        margin: auto;
+    }
+    .service-section-1 .section-1-2 .Card {
+        border: 2px solid rgb(50, 169, 205);
+        /* margin-top: 13%; */
+        display: inline;
+        /* width: 2%;  */
+        margin-bottom: 23%;
+        min-width: 25%;
+        position: relative;
+        /* top: 300px; */
+        height: 35vh;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+}

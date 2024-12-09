@@ -1,0 +1,67 @@
+.footer{
+    background: linear-gradient(to right, rgba(10, 7, 7, 0.4) , rgba(10, 7, 7, 0.9)), url('https://deothemes.com/envato/sedona/html/img/footer/1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 95vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+    margin-bottom: 1px ;
+    /* margin-top: 115%; */
+    margin: auto;
+    /* position: sticky; */
+    /* bottom: 0; */
+}
+.footer .links{
+    display: flex;
+    flex: 2;
+}
+.footer .logo{
+    padding-left: 5%;
+    flex: 1;
+    text-decoration: none;
+}
+.footer .logo a{
+    text-decoration: none;
+    color: rgb(185, 68, 68);
+}
+.footer ul{
+    list-style: none;
+    padding-left: 5%;
+    flex: 1;
+}
+.footer ul a{
+    text-decoration: none;
+    color: rgb(131, 126, 126);
+    line-height: 2.5rem;
+}
+.footer ul a:hover{
+    color: #FFBB31;
+    cursor: pointer; 
+}
+.footer .social{
+    padding-left: 5%;
+    padding-right: 5%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .social a{
+    text-decoration: none;
+    color: white;
+}
+.footer .social a:hover{
+    color: #FFBB31;
+}
+
+@media only screen and (max-width: 900px){
+    .footer{
+        flex-direction: column;
+        gap: 60px;
+        height: 100vh;
+    }
+    .footer .social{
+        padding-inline: 25%;
+    }
+}
